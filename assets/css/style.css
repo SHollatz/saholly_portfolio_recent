@@ -25,7 +25,6 @@ header {
     z-index: 1;
 }
 
-
 h1 {
     padding: 0 10px 0 10px;
     width: 200px;
@@ -157,7 +156,7 @@ cite {
 footer {
     width: 100%;
     height: 42px;
-    background-color: rgb(5, 60, 148) ;
+    background-color: rgb(5, 60, 148);
     position: fixed;
     bottom:0;
     left:0;
@@ -174,6 +173,7 @@ footer {
     text-align: center;
     background-color: #666666;
 }
+
  #about_body {
     background-image: url("../images/poppies_smaller.jpg");
     background-size: 2602px 1384px ;
@@ -184,8 +184,8 @@ footer {
 
 #main_content_about {
     width: 960px;
-    height: 460px;
-    padding: 20px;
+    height: 560px;
+    padding: 40px;
     font-family: 'Inconsolata', monospace;
     background-color:#ffffff;
     position: relative;
@@ -206,19 +206,20 @@ footer {
 
 #about_me {
     line-height: 1.3;
-    font-size: 24px;
+    font-size: 26px;
     margin-right: 10px;
 }
 
 #contact_body{
-    background-color: #ebd6b5;
+    background-color: #63c2ff;
     background-image: url("../images/mountains_small.jpg");
     background-repeat: no-repeat;
     position: relative;
 }
+
 #main_content_contact {
     width: 960px;
-    height: 440px;
+    height: 560px;
     padding: 40px;
     font-family: 'Inconsolata', monospace;
     background-color:#ffffff;
@@ -229,9 +230,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: url("../images/postcard.jpg");
-    background-size: 100% auto;
+    background-size: auto 100%;
 }
-
 
 h3 {
     font-family: 'Inconsolata', monospace;
@@ -240,17 +240,22 @@ h3 {
     margin: 10px 0px 5px 0px;
 }
 
+#input {
+    padding-top: 10px;
+}
+
 #email,
 #name {
     width:860px;
     line-height: 1.6;
     border-radius: 3px;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 #message {
     width: 860px;
-    height: 100px;
+    height: 150px;
     line-height: 1.6px;
     padding: 10px 5px 5px 5px;
     border-radius: 3px;
@@ -262,7 +267,8 @@ h3 {
     height: 30px;
     color: white;
     background-color: rgb(5, 60, 148);
-    margin: 10px 0 20px 0;  
+    margin: 10px 0 20px 0; 
+    border-radius: 5px; 
  }  
  
  button:hover {
@@ -274,8 +280,9 @@ h3 {
      background-color: #cccccc;
      color: rgba(100, 132, 236, 0.842);
  }
+
  #portfolio_body {
-    background-color: #9aac49;
+    background-color: #219e2c;
     margin: 0 auto 0 auto;
     position: relative;
     background-image: url("../images/grass.jpg");
@@ -307,7 +314,7 @@ h3 {
 
 h2 {
     font-size: 28px;
-    color: rgb(5, 60, 148)
+    color: rgb(5, 60, 148);
 }
 
 .project_container {
@@ -343,7 +350,7 @@ h2 {
 
 span {   
     width: 230px;
-    height: 20x;
+    height: 25px;
     font-size: 16px;
     padding: 4.5px;
     z-index: 1;
@@ -366,17 +373,21 @@ span {
     .navigation {
         width: 72%;
     } 
+
     a:link {
         margin:5px;
     }
+
     hr {
         width:650px;
     }
+
     #portrait {
         width:234px;
         height: 229px;
         float:left;
     }
+
     #about_me {
         line-height: 1.3;
         font-size: 22px;
@@ -385,30 +396,28 @@ span {
 
     #main_content_about {
         width:700px;
-        margin: 100px auto 20px 35px;
+        height: 530px;
+        margin: 100px auto 20px auto;
     }
+
     #main_content_contact {
         width:700px;
-        margin: 100px auto 20px 35px;
+        height: 530px;
+        margin: 100px auto 20px auto;
     }
-    #name {
-        width: 610px;
-    }
-    #email {
-        width: 610px;
-    }
+
+    #name,
+    #email,
     #message {
-        width:610px;
-    }
-    #submit {
-        width:100%;
+        width: 610px;
     }
 
     #main_content_portfolio {
         width:700px;
         height: 530px;
-        margin: 100px auto 20px 35px;
+        margin: 100px auto 20px auto;
     }
+
     .project_container {
         width: 180px;
         height: 180px;
@@ -425,11 +434,13 @@ span {
         bottom: 70px;
         left: 0px; 
     }
+
     .banner_app {
         width: 180px;
         bottom: 45px;
         left: 0px;
     }
+
     .banner_code {
         width: 180px;
         bottom: 20px;
@@ -460,21 +471,28 @@ span {
         height: 30px;
         padding: 5px;
     }
+
     #main_content_about {
-        width:640px;
-        margin: 60px auto 0 auto;
-    }
-    hr {
         width:600px;
+        height: 500px;
+        margin: 60px auto 0 auto;
+        padding: 30px;
+    }
+
+    hr {
+        width:530px;
     }
     
     #about_me {
-        font-size: 20px;
+        font-size: 20px; 
+        line-height: 1.2;   
     }
 
     #main_content_contact {
-        widows: 640px;
-        margin: 0 auto 0 auto;
+        width: 600px;
+        height: 500px;
+        margin: 60px auto 0px auto;
+        padding: 30px;
     }
 
     #input {
@@ -486,18 +504,18 @@ span {
     #message {
         width: 530px;
     }
-    #submit {
-        width:100%;
-    }
 
     #main_content_portfolio {
-        width: 640px;
-        margin: 70px auto 0 auto;
+        width: 600px;
+        height: 500px;
+        margin: 60px auto 0 auto;
+        padding: 30px;
     }
+
     .project_container {
         width: 150px;
         height: 150px;
-        margin: 0 10px 10px 0px;
+        margin: 20px 15px 10px 7px;
     }
 
     .portfolio_img {
@@ -510,28 +528,29 @@ span {
     .banner_code {
         width: 150px;
     }
-  
+} 
     
 
 @media screen and (max-width:640px) {
     header {
         width:100%;
     }
+
     .header_content {
         width: 100%;
     }
 
     h1 {
-        width:640px;
-        height: 40px;
-        line-height: 1.5;
-        float:left;
+        font-size: 20px;
+        height: 30px;
     }
 
     .navigation {
-        width: 640px;
-        height: 0px;
-        padding: 2px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 26px;
     }
     
     .main {
@@ -539,61 +558,71 @@ span {
         height:1700px;
         margin: 0 auto 0 auto;
     }
+
     #main_content_about {
-        width:550px;
-        height:650px;
+        width:450px;
+        height:780px;
+        padding: 20px 20px 20px 20px;
     }
+
     hr {
-        width:485px;
+        width:400px;
     }
    
     #portrait {
-        width:485px;
-        height: 360px;
-
+        margin:0 0 10px 0;
+        width:351px;
+        height: 343.5px;
     }
-    #description {
-        width:95%;
-        margin-left:10px;
-        line-height: 1.5;
+
+    #about_me {
+        margin: 0 auto 10px auto;
+        width:351px;
+        width: 351px;
     }
 
     #main_content_contact {
-        width:550px;
-        height:420px;
+        width:450px;
+        height:500px;
+        position: relative;
     }
-    #name {
-        width: 440px;
-    }
-    #email {
-        width: 440px;
-    }
+
+    #name,
+    #email,
     #message {
-        width:440px;
+        width: 390px;
+        margin-bottom: 5px;
     }
-    #submit {
-        width:100%;
+
+    .submit {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
     }
+
     #main_content_portfolio {
-        width:550px;
-        height: 1630px;
-        margin: 0 auto 20px auto;
+        width:450px;
+        height: 2400px;
     }
     .project_container {
-        width: 430px;
-        height: 280px;
-        margin: 0 10px 15px 0px;
+        width: 350px;
+        height: 350px;
+        margin: 15px 20px 15px 20px;
+    }
+
+    .portfolio_img {
+        width: 350px;
+        height: 350px;
     }
     
     .banner_name,
     .banner_app,
     .banner_code {
-        width: 430px;
-        height:280px;
+        width: 350px;
     }
   
     span {
-        width:430px;
-        height: 40px;
+        width:350px;
+        height: 25px;
     }
 }
