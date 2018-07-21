@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2570px;
+    max-height: 1500px;
+}
+
+.main {
+    height:100%;
+}
+
 header {
     width: 100%;
     height: 60px; 
@@ -6,28 +19,20 @@ header {
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgb(5, 60, 148);
-    margin-bottom: 20px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-.header_content {
-    width: 100%;
-    height: 57px;
-    background-color:#ffffff;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 h1 {
-    margin:0;
-    padding: 0 10px 0 10 px;
-    width: 12%;
+    padding: 0 10px 0 10px;
+    width: 200px;
     height: 60px;
     font-size: 22px;
     line-height: 2.5;
+    letter-spacing: 2px;
     background-color: rgb(5, 60, 148);
     border-radius: 0px 0px 5px 5px;
     color: white;
@@ -35,15 +40,16 @@ h1 {
     float: left; 
 }
 
-
 .navigation {
-    width: 40%;
+    width: 700px;
     height: 60px;
     padding: 20px 0 20px 0;
     font-size: 16px;
     text-align: center;
     float:right;
 }
+
+#my_email,
 a {
     color: rgb(5, 60, 148);
 }
@@ -62,18 +68,12 @@ a:hover {
 }
 
 a:active {
-    color: rgba(44, 155, 155, 0.842);
+    color: rgba(100, 132, 236, 0.842);
 }
-
 
 .about{
     border-right-style: solid;
     border-right-color: #cccccc;
-}
-
-main {
-    width: 100%;
-    height: 100%;
 }
 
 .container {
@@ -85,20 +85,20 @@ main {
     position: relative;
     box-sizing: border-box;
     width: 800px;
-    height: 600px;
+    height: 100%;
     padding: 20px;
 }
 
 #landing_img {
-    width: 1024px;
-    max-height: 768px;
+    width: 1536px;
+    height: 1180px;
 }
 
 #logo {
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 180px;
-    height: 80px;
+    width: 250px;
+    height: 120px;
     transform: rotate(10deg);
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
@@ -112,18 +112,21 @@ main {
     text-align: center;
     border-radius: 70px;
     position: absolute;
-    top: 195px;
-    left: 310px;
+    top: 290px;
+    left: 470px;
+    outline: none;
+    cursor: pointer;
 }
 
-#quote {
+blockquote {
     position: absolute;
-    top: 150px;
-    left: 10px;
-    font-size: 50px;
+    top: 200px;
+    right: 80px;
+    font-size: 40px;
     font-family: 'Inconsolata', monospace;
-    line-height: 1.5;
+    line-height: 1.2;
     text-shadow: 2px 2px 4px lightgrey;
+    text-align: center;
     position: absolute;
     padding-left: 1em;
     font-weight: 100;
@@ -137,7 +140,18 @@ cite {
     font-family: 'Inconsolata', monospace;
     font-size: 24px;
     color: darkgrey;
+}
 
+#description {
+    width: 600px;
+    font-family: 'Domine', serif;
+    position: absolute;
+    top: 700px;
+    left: 500px;
+    font-size: 30px;
+    color: rgba(5, 60, 148, 0.678);
+    background-color:white;
+    text-shadow: 2px 2px 4px #e4c951;
 }
 
 footer {
@@ -152,12 +166,434 @@ footer {
     
 .copyright {
     box-sizing: border-box;
+    margin-top: 2px;
     width: 100%;
     height: 40px;
     font-size: 16px;
     padding: 5px;
     text-align: center;
     background-color: #666666;
+}
+ #about_body {
+    background-image: url("../images/poppies_smaller.jpg");
+    background-size: 2602px 1384px ;
+    background-repeat: no-repeat;
+    background-color: #ebd6b5;
+    position: relative;
+ }
+
+#main_content_about {
+    width: 960px;
+    height: 460px;
+    padding: 20px;
+    font-family: 'Inconsolata', monospace;
+    background-color:#ffffff;
+    position: relative;
+    margin:200px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portrait {
+    width:334.29px; 
+    height:327.14px;
+    margin: 10px 20px 5px 10px;
+    float:left;
+}
+
+#about_me {
+    line-height: 1.3;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#contact_body{
+    background-color: #ebd6b5;
+    background-image: url("../images/mountains_small.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+#main_content_contact {
+    width: 960px;
+    height: 440px;
+    padding: 40px;
+    font-family: 'Inconsolata', monospace;
+    background-color:#ffffff;
+    margin:200px auto 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("../images/postcard.jpg");
+    background-size: 100% auto;
+}
+
+
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px 0px 5px 0px;
+}
+
+#email,
+#name {
+    width:860px;
+    line-height: 1.6;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#message {
+    width: 860px;
+    height: 100px;
+    line-height: 1.6px;
+    padding: 10px 5px 5px 5px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.submit{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color: rgb(5, 60, 148);
+    margin: 10px 0 20px 0;  
+ }  
+ 
+ button:hover {
+     font-weight: bold;
+     background-color: #555555;;
+ }
+
+ button:active {
+     background-color: #cccccc;
+     color: rgba(100, 132, 236, 0.842);
+ }
+ #portfolio_body {
+    background-color: #9aac49;
+    margin: 0 auto 0 auto;
+    position: relative;
+    background-image: url("../images/grass.jpg");
+}
+
+#main_content_portfolio {
+    width: 910px;
+    height: 640px;
+    padding: 40px;
+    margin: 200px auto 20px auto;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    border-color: #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.placeholder {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.clearfloat {
+    clear: both;
+    overflow: auto;
+}
+
+h2 {
+    font-size: 28px;
+    color: rgb(5, 60, 148)
+}
+
+.project_container {
+    margin:20px;
+    float:left;
+    position: relative;
+    width: 230px;
+    height: 230px;
+}
+
+.portfolio_img {
+    width: 230px;
+    height: 230px;
+}
+
+.banner_name {
     position: absolute;
-    bottom: 0;
+    bottom: 90px;
+    left: 0px; 
+}
+
+.banner_app {
+    position: absolute;
+    bottom: 65px;
+    left: 0px; 
+}
+
+.banner_code {
+    position: absolute;
+    bottom: 40px;
+    left:0px;
+}
+
+span {   
+    width: 230px;
+    height: 20x;
+    font-size: 16px;
+    padding: 4.5px;
+    z-index: 1;
+    background-color:  rgb(5, 60, 148);
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width:980px) {
+    header {
+        width:100%;
+    }
+
+    h1 {
+        width:200px;
+    }
+
+    .navigation {
+        width: 72%;
+    } 
+    a:link {
+        margin:5px;
+    }
+    hr {
+        width:650px;
+    }
+    #portrait {
+        width:234px;
+        height: 229px;
+        float:left;
+    }
+    #about_me {
+        line-height: 1.3;
+        font-size: 22px;
+        margin:0 10px 10px 5px; 
+    }
+
+    #main_content_about {
+        width:700px;
+        margin: 100px auto 20px 35px;
+    }
+    #main_content_contact {
+        width:700px;
+        margin: 100px auto 20px 35px;
+    }
+    #name {
+        width: 610px;
+    }
+    #email {
+        width: 610px;
+    }
+    #message {
+        width:610px;
+    }
+    #submit {
+        width:100%;
+    }
+
+    #main_content_portfolio {
+        width:700px;
+        height: 530px;
+        margin: 100px auto 20px 35px;
+    }
+    .project_container {
+        width: 180px;
+        height: 180px;
+        margin: 10px 10px 20px 8px;
+    }
+    
+    .portfolio_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .banner_name{
+        width: 180px;
+        bottom: 70px;
+        left: 0px; 
+    }
+    .banner_app {
+        width: 180px;
+        bottom: 45px;
+        left: 0px;
+    }
+    .banner_code {
+        width: 180px;
+        bottom: 20px;
+        left: 0px;
+    }
+
+    span {
+        width:240px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        width:100%;
+        height:65px;
+    }
+
+    h1 {
+        width:100%;
+        line-height: 1;
+        height: 35px;
+        padding: 5px;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+    }
+    #main_content_about {
+        width:640px;
+        margin: 60px auto 0 auto;
+    }
+    hr {
+        width:600px;
+    }
+    
+    #about_me {
+        font-size: 20px;
+    }
+
+    #main_content_contact {
+        widows: 640px;
+        margin: 0 auto 0 auto;
+    }
+
+    #input {
+        width: 600px;
+    }
+
+    #name,
+    #email,
+    #message {
+        width: 530px;
+    }
+    #submit {
+        width:100%;
+    }
+
+    #main_content_portfolio {
+        width: 640px;
+        margin: 70px auto 0 auto;
+    }
+    .project_container {
+        width: 150px;
+        height: 150px;
+        margin: 0 10px 10px 0px;
+    }
+
+    .portfolio_img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .banner_name,
+    .banner_app,
+    .banner_code {
+        width: 150px;
+    }
+  
+    
+
+@media screen and (max-width:640px) {
+    header {
+        width:100%;
+    }
+    .header_content {
+        width: 100%;
+    }
+
+    h1 {
+        width:640px;
+        height: 40px;
+        line-height: 1.5;
+        float:left;
+    }
+
+    .navigation {
+        width: 640px;
+        height: 0px;
+        padding: 2px;
+    }
+    
+    .main {
+        width:550px;
+        height:1700px;
+        margin: 0 auto 0 auto;
+    }
+    #main_content_about {
+        width:550px;
+        height:650px;
+    }
+    hr {
+        width:485px;
+    }
+   
+    #portrait {
+        width:485px;
+        height: 360px;
+
+    }
+    #description {
+        width:95%;
+        margin-left:10px;
+        line-height: 1.5;
+    }
+
+    #main_content_contact {
+        width:550px;
+        height:420px;
+    }
+    #name {
+        width: 440px;
+    }
+    #email {
+        width: 440px;
+    }
+    #message {
+        width:440px;
+    }
+    #submit {
+        width:100%;
+    }
+    #main_content_portfolio {
+        width:550px;
+        height: 1630px;
+        margin: 0 auto 20px auto;
+    }
+    .project_container {
+        width: 430px;
+        height: 280px;
+        margin: 0 10px 15px 0px;
+    }
+    
+    .banner_name,
+    .banner_app,
+    .banner_code {
+        width: 430px;
+        height:280px;
+    }
+  
+    span {
+        width:430px;
+        height: 40px;
+    }
 }

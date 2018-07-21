@@ -3,56 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sabine Hollatz</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="landing  page, portfolio">
+    <meta name="keywords" content="SaHolly-Design, Portfolio, UCBX Coding Bootcamp">
+    <meta name="author" content="Sabine Hollatz">
+    <title>SaHolly-Design</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Domine|Inconsolata" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="portfolio_body">
     <header>
         <div class="header_content">
             <h1>Sabine Hollatz</h1>
             <div class="navigation">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+                <!--<a id="home" href='index.html'>Home</a>-->
+                <a id="about" href="about.html">About</a>
+                <a id="portfolio" href="portfolio.html">Portfolio</a>
+                <a id="contact" href="contact.html">Contact</a>
+                <a id="linkedin" href="https://www.linkedin.com/in/sabinehollatz/" target='_blank' rel="noopener noreferrer">LinkedIn</a>
+                <a id="github" href="https://github.com/SHollatz" target='_blank' rel="noopener noreferrer">GitHub</a>
+                <a id="my_email" href="mailto:deb@ztallohs@gmail.com">ztallohs@gmail.com</a>
             </div>
         </div>
     </header>
     <br class="clearfloat">
-
+    
     <section class="main">
         <div id="main_content_portfolio">
             <h2>Portfolio</h2>
             <hr>
             <div class="placeholder">
-                <div id="SanFrancisco">
-                    <img src="assets/images/SanFrancisco.jpg" width="200" height="200" alt="ATT Park">
-                    <a href="https://shollatz.github.io/Project1/"><span id="hSF">Event Finders</span></a>
+                <div class="project_container" id="SanFrancisco">
+                    <img class="portfolio_img" src="assets/images/Project1.PNG"  alt="Event Finders">
+                    <span class="banner_name">Event Finders</span>
+                    <a href="https://shollatz.github.io/Project1/" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_app">Try It!</span>
+                    </a>
+                    <a href="https://github.com/SHollatz/Project1" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_code">The Code</span>
+                    </a>
                 </div>
-
-                <div id="Hamburg">
-                    <img src="assets/images/Hamburg.jpg" width="200" height="200" alt="Hamburg Harbor">
-                    <a href="https://shollatz.github.io/unit-4-game/"><span id="hHH">Crystal Collector</span></a> 
+                <div class="project_container" id="MaunaKea">
+                    <img class="portfolio_img" src="assets/images/Chemtastic.PNG" alt="Chemtastic">
+                    <span class="banner_name">Chem*giphy*tastic</span>
+                    <a href="https://shollatz.github.io/Chemtastic/" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_app">Try It!</span>
+                    </a>
+                    <a href="https://github.com/SHollatz/Chemtastic" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_code">The Code</span>
+                    </a>
+                </div>
+                <div class="project_container" id="HongKong">
+                    <img class="portfolio_img" src="assets/images/explosive_trivia.PNG" alt="Trivia">
+                    <span class="banner_name">Explosive Trivia Game</span>
+                    <a href="https://shollatz.github.io/TriviaGame/" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_app">Play It!</span>
+                    </a>
+                    <a href="https://github.com/SHollatz/TriviaGame" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_code">The Code"</span>
+                    </a>
                 </div>
                 <br class="clearfloat">
-                
-                <div id="HongKong">
-                    <img src="assets/images/HongKong.jpg" width="200" height="200" alt="Plaza">
-                    <a href="https://shollatz.github.io/TriviaGame/"><span id="hHK">Trivia Game</span></a>
-                </div>
-                
 
-                <div id="MaunaKea">
-                    <img src="assets/images/MaunaKea.jpg" width="200" height="200" alt="Observatory">
-                    <a href="https://shollatz.github.io/Chemtastic/"><span id="hMK">Chem*giphy*tastic</span></a>
+                <div class="project_container" id="Hamburg">
+                    <img class="portfolio_img" src="assets/images/unit_game.PNG"  alt="Unit Game">
+                    <span class="banner_name">Crystal Collector</span>
+                    <a href="https://shollatz.github.io/unit-4-game/" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_app">Play It!</span>
+                    </a>
+                    <a href="https://github.com/SHollatz/unit-4-game" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_code">The Code</span>
+                    </a>
+                    
+                </div>
+                <div class="project_container" id="MuiWoLantau">
+                    <img class="portfolio_img" src="assets/images/train_time.PNG" alt="Train Time">
+                    <span class="banner_name">It's Train Time</span>
+                    <a href="https://shollatz.github.io/train_time/" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_app">Try It!</span>
+                    </a>
+                    <a href="https://github.com/SHollatz/train_time" target='_blank' rel="noopener noreferrer">
+                        <span class="banner_code">The Code</span>
+                    </a>
+                </div>
+                <div class="project_container" id="MuiWoLantau">
+                    <img class="portfolio_img" src="assets/images/psychic_game.PNG" alt="Psychic Game">
+                        <span class="banner_name">The Psychic Game</span>
+                        <a href="https://shollatz.github.io/Psychic-Game/" target='_blank' rel="noopener noreferrer">
+                            <span class="banner_app">Play It!</span>
+                        </a>
+                        <a href="https://github.com/SHollatz/Psychic-Game" target='_blank' rel="noopener noreferrer">
+                            <span class="banner_code">The Code</span>
+                        </a>
                 </div>
                 <br class="clearfloat">
-                
-                <div id="MuiWoLantau">
-                    <img src="assets/images/MuiWoLantau.jpg" width="200" height="200" alt="Residential Area">
-                    <a href="https://shollatz.github.io/train_time/"><span id="hMW">Train Time</span></a>
-                </div>
             </div>
         </div>
     </section>
@@ -64,4 +110,5 @@
         </div>
     </footer>
 </body>
+
 </html>
