@@ -3,8 +3,8 @@
 }
 
 body {
-    max-width: 2570px;
-    max-height: 1500px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .main {
@@ -176,7 +176,7 @@ footer {
 
  #about_body {
     background-image: url("../images/poppies_smaller.jpg");
-    background-size: 2602px 1384px ;
+    background-size: auto auto;
     background-repeat: no-repeat;
     background-color: #ebd6b5;
     position: relative;
@@ -213,6 +213,7 @@ footer {
 #contact_body{
     background-color: #63c2ff;
     background-image: url("../images/mountains_small.jpg");
+    background-size: auto auto;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -230,7 +231,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: url("../images/postcard.jpg");
-    background-size: auto 100%;
+    background-size: auto auto;
 }
 
 h3 {
@@ -286,6 +287,7 @@ h3 {
     margin: 0 auto 0 auto;
     position: relative;
     background-image: url("../images/grass.jpg");
+    background-size: auto auto;
 }
 
 #main_content_portfolio {
@@ -362,6 +364,10 @@ span {
 
 
 @media screen and (max-width:980px) {
+    about_body {
+        max-width: 980px;
+        height: 100%;
+    }
     header {
         width:100%;
     }
