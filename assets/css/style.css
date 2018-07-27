@@ -288,6 +288,7 @@ h3 {
     position: relative;
     background-image: url("../images/grass.jpg");
     background-size: auto auto;
+    background-repeat: no-repeat;
 }
 
 #main_content_portfolio {
@@ -551,7 +552,7 @@ span {
     #about_body, 
     #portfolio_body,
     #contact_body{
-        max-width: 640px;
+        /* max-width: 640px; */
         height: auto;
     }
 
@@ -578,7 +579,7 @@ span {
     
     .main {
         width:550px;
-        height:1700px;
+        height:1000px;
         margin: 0 auto 0 auto;
     }
 
