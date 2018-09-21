@@ -80,79 +80,6 @@ a:active {
     float: right; 
 }
 
-.container_quote {
-    position: relative;
-    box-sizing: border-box;
-    width: 800px;
-    height: 100%;
-    padding: 20px;
-}
-
-#landing_img {
-    width: 1536px;
-    height: 1180px;
-}
-
-#logo {
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 250px;
-    height: 120px;
-    transform: rotate(10deg);
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-    text-shadow: 2px 2px 4px #e4c951;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    color: rgb(5, 60, 148);
-    background: radial-gradient( circle at 50px 0px, #f8f0a3, #d3b064,  #695e4f);
-    border: 1px #644c16;
-    border-style: dotted none dotted none;
-    text-align: center;
-    border-radius: 70px;
-    position: absolute;
-    top: 290px;
-    left: 470px;
-    outline: none;
-    cursor: pointer;
-}
-
-blockquote {
-    position: absolute;
-    top: 200px;
-    right: 80px;
-    font-size: 40px;
-    font-family: 'Inconsolata', monospace;
-    line-height: 1.2;
-    text-shadow: 2px 2px 4px lightgrey;
-    text-align: center;
-    position: absolute;
-    padding-left: 1em;
-    font-weight: 100;
-    color: rgb(82, 80, 80);
-}
-
-cite {
-    position: absolute;
-    top: 380px;
-    left: 500px;
-    font-family: 'Inconsolata', monospace;
-    font-size: 24px;
-    color: darkgrey;
-}
-
-#description {
-    width: 600px;
-    font-family: 'Domine', serif;
-    position: absolute;
-    top: 700px;
-    left: 500px;
-    font-size: 30px;
-    color: rgba(5, 60, 148, 0.678);
-    background-color:white;
-    text-shadow: 2px 2px 4px #e4c951;
-}
-
 footer {
     width: 100%;
     height: 42px;
@@ -175,8 +102,8 @@ footer {
 }
 
  #about_body {
-    background-image: url("../images/poppies_smaller.jpg");
-    background-size: auto auto;
+    background-image: url("../images/poppies.jpg");
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #ebd6b5;
     position: relative;
@@ -189,7 +116,7 @@ footer {
     font-family: 'Inconsolata', monospace;
     background-color:#ffffff;
     position: relative;
-    margin:200px auto;
+    margin:100px auto;
     border-style: solid;
     border-width: 1px;
     border-color: #cccccc;
@@ -210,92 +137,22 @@ footer {
     margin-right: 10px;
 }
 
-#contact_body{
-    background-color: #63c2ff;
-    background-image: url("../images/mountains_small.jpg");
-    background-size: auto auto;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#main_content_contact {
-    width: 960px;
-    height: 560px;
-    padding: 40px;
-    font-family: 'Inconsolata', monospace;
-    background-color:#ffffff;
-    margin:200px auto 0 auto;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #cccccc;
-    border-radius: 10px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: url("../images/postcard.jpg");
-    background-size: auto auto;
-}
-
-h3 {
-    font-family: 'Inconsolata', monospace;
-    font-size: 18px;
-    font-weight: lighter;
-    margin: 10px 0px 5px 0px;
-}
-
-#input {
-    padding-top: 10px;
-}
-
-#email,
-#name {
-    width:860px;
-    line-height: 1.6;
-    border-radius: 3px;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-#message {
-    width: 860px;
-    height: 150px;
-    line-height: 1.6px;
-    padding: 10px 5px 5px 5px;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-.submit{
-    width: 90px;
-    height: 30px;
-    color: white;
-    background-color: rgb(5, 60, 148);
-    margin: 10px 0 20px 0; 
-    border-radius: 5px; 
- }  
- 
- button:hover {
-     font-weight: bold;
-     background-color: #555555;;
- }
-
- button:active {
-     background-color: #cccccc;
-     color: rgba(100, 132, 236, 0.842);
- }
-
  #portfolio_body {
+    width: 100%;
+    height: 100%;
     background-color: #219e2c;
     margin: 0 auto 0 auto;
     position: relative;
     background-image: url("../images/grass.jpg");
-    background-size: auto auto;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
 #main_content_portfolio {
     width: 910px;
-    height: 640px;
+    height: 650px;
     padding: 40px;
-    margin: 200px auto 20px auto;
+    margin: 100px auto;
     border-style: solid;
     border-width: 1px;
     font-family: 'Inconsolata', monospace;
@@ -366,8 +223,7 @@ span {
 
 @media screen and (max-width:980px) {
     #about_body, 
-    #portfolio_body,
-    #contact_body{
+    #portfolio_body {
         max-width: 980px;
         height: auto;
     }
@@ -408,18 +264,6 @@ span {
         width:700px;
         height: 530px;
         margin: 100px auto 20px auto;
-    }
-
-    #main_content_contact {
-        width:700px;
-        height: 530px;
-        margin: 100px auto 20px auto;
-    }
-
-    #name,
-    #email,
-    #message {
-        width: 610px;
     }
 
     #main_content_portfolio {
@@ -465,8 +309,7 @@ span {
 
 @media screen and (max-width:768px) {
     #about_body, 
-    #portfolio_body,
-    #contact_body{
+    #portfolio_body {
         max-width: 768px;
         height: auto;
     }
@@ -505,23 +348,6 @@ span {
         line-height: 1.2;   
     }
 
-    #main_content_contact {
-        width: 600px;
-        height: 500px;
-        margin: 60px auto 0px auto;
-        padding: 30px;
-    }
-
-    #input {
-        width: 600px;
-    }
-
-    #name,
-    #email,
-    #message {
-        width: 530px;
-    }
-
     #main_content_portfolio {
         width: 600px;
         height: 500px;
@@ -550,8 +376,7 @@ span {
 
 @media screen and (max-width:640px) {
     #about_body, 
-    #portfolio_body,
-    #contact_body{
+    #portfolio_body {
         /* max-width: 640px; */
         height: auto;
     }
@@ -603,25 +428,6 @@ span {
         margin: 0 auto 10px auto;
         width:351px;
         width: 351px;
-    }
-
-    #main_content_contact {
-        width:450px;
-        height:500px;
-        position: relative;
-    }
-
-    #name,
-    #email,
-    #message {
-        width: 390px;
-        margin-bottom: 5px;
-    }
-
-    .submit {
-        position: absolute;
-        bottom: 20px;
-        left: 30px;
     }
 
     #main_content_portfolio {
